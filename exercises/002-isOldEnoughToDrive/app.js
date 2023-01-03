@@ -1,3 +1,10 @@
-function isOldEnoughToDrive(age) {
-  // your code here
+const isOldEnoughToDrive = age => {
+  if (age >= 16) {
+    return true
+  } else {
+    return false
+  }
 }
+
+let output = isOldEnoughToDrive(16);
+console.log(output);
