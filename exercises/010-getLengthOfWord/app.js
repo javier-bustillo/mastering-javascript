@@ -1,3 +1,6 @@
-function getLengthOfWord(word) {
-  // your code here
+const getLengthOfWord = word => {
+    return word.length;
 }
+
+let output = getLengthOfWord('Hell');
+console.log(output);
