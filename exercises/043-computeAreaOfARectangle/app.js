@@ -1,5 +1,6 @@
-function computeAreaOfARectangle(length, width) {
-  // your code here
+const computeAreaOfARectangle = (length, width) => {
+    let rectangleArea = length * width;
+    return rectangleArea;
 
 }
 
