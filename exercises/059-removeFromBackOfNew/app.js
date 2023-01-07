@@ -1,5 +1,6 @@
 const removeFromBackOfNew = arr => {
-    const newArr = arr.slice(0, -1);
+    arr.pop();
+    const newArr = arr;
     return newArr;
 }
 let arr = [1, 2, 3];
