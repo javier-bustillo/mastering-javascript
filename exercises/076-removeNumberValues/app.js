@@ -3,9 +3,13 @@ let obj = {
     b: 'remaining',
     c: 4
 };
-function removeNumberValues(obj) {
-    // your code here
-    
+const removeNumberValues = obj => {
+    for (let key in obj) {
+        if (Number(obj[key])) {
+            delete obj[key];
+        }
+    }
+    return obj;
 }
 
 removeNumberValues(obj);
