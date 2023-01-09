@@ -1,1 +1,7 @@
-// Write your function here
+const areValidCredentials = (name, password) => {
+    if (name.length > 3 && password.length >= 8) return true;
+    else return false;
+
+}
+let output = areValidCredentials('Ritu', 'mylongpassword');
+console.log(output);
