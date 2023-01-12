@@ -3,11 +3,8 @@ function countAllCharacters(str) {
 
     if (str.length < 1) return myObj;
     for (x of str) {
-        if (myObj[x] === undefined) {
-            myObj[x] = 1;
-        } else {
-            myObj[x] += 1;
-        }
+        if (myObj[x] === undefined) myObj[x] = 1;
+        else myObj[x] += 1;
     }
 
     return myObj;
