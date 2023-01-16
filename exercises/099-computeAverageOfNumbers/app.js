@@ -1,11 +1,12 @@
 function computeAverageOfNumbers(arr) {
     let aux = 0;
-    if (arr.length < 1) return [];
+    if (arr.length < 1) return 0;
     else
         for (x of arr) {
             aux += x;
         }
-    return x;
+    let averageOfNumbers = aux / arr.length;
+    return averageOfNumbers;
 }
 
 let input = [1, 2, 3, 4, 5];
