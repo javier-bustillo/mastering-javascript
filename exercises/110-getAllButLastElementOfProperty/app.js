@@ -1,8 +1,15 @@
 let obj = {
-  key: [1, 2, 3]
+    key: [1, 2, 3]
 };
+
 function getAllButLastElementOfProperty(obj, key) {
-    // your code here
+    let myArr = [];
+
+    if (obj[key] < 1 || !(Array.isArray(obj[key]))) return myArr;
+
+
+
+    return myArr;
 }
 
 let output = getAllButLastElementOfProperty(obj, 'key');
