@@ -8,7 +8,7 @@ function getAllButLastElementOfProperty(obj, key) {
     if (obj[key] < 1 || !(Array.isArray(obj[key]))) return myArr;
 
     myArr = obj[key];
-    myArr.pop;
+    myArr.pop();
 
     return myArr;
 }
