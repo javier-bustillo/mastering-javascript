@@ -1,5 +1,10 @@
 function squareElements(arr) {
-  // your code here
+    let myArr = [];
+    arr.forEach(element => {
+        myArr.push(Math.pow(element, 2));
+    });
+
+    return myArr;
 }
 
 let output = squareElements([1, 2, 3]);
