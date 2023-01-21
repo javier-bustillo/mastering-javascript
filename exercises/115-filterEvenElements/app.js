@@ -1,6 +1,6 @@
-
 function filterEvenElements(arr) {
-    // your code here
+    let myArr = arr.filter(x => x % 2 === 0);
+    return myArr;
 }
 
 let output = filterEvenElements([2, 3, 4, 5, 6]);
