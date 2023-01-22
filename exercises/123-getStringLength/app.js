@@ -1,6 +1,11 @@
+let aux = 0;
+
 function getStringLength(string) {
-    // your code here
+    for (x of string) {
+        if (x) aux += 1;
+    }
+    return aux;
 }
 
-let output = getStringLength('hello');
+let output = getStringLength('hellos');
 console.log(output); // --> 5
