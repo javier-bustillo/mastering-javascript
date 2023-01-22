@@ -7,5 +7,5 @@ function computeSumOfAllElements(arr) {
     return aux;
 }
 
-let output = computeSumOfAllElements([5, 3, 9])
+let output = computeSumOfAllElements([5, 3, 9, 10])
 console.log(output); // --> 6
