@@ -1,5 +1,17 @@
 function findShortestOfThreeWords(word1, word2, word3) {
-    // your code here
+    let myArr = [];
+
+    myArr.push(word1);
+    myArr.push(word2);
+    myArr.push(word3);
+
+    let elementsLength = myArr.map(element => element.length);
+    let elementsSortedByLength = elementsLength.sort();
+    let shortest = elementsSortedByLength[0];
+
+    shortestElement = myArr.find(x => x.length === shortest);
+
+    return shortestElement;
 }
-let output = findShortestOfThreeWords('a', 'two', 'three');
+let output = findShortestOfThreeWords('a', 'two', 'three', 'b');
 console.log(output); // --> 'a'
