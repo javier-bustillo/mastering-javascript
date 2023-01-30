@@ -1,6 +1,13 @@
 function multiplyBetween(num1, num2) {
-    // Your code here
+    let aux = 1;
 
+    if (num2 < num1) return 0;
+    else {
+        for (let i = num1; i < num2; i++) {
+            aux *= i;
+        }
+    }
+    return aux
 }
 
 let output = multiplyBetween(2, 5);
