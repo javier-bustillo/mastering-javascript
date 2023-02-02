@@ -1,5 +1,10 @@
 function getAllKeys(obj) {
-    // your code here
+    let myArray = [];
+
+    for (let key in obj) {
+        myArray.push(key);
+    }
+    return myArray;
 }
 let output = getAllKeys({
     name: 'Sam',
