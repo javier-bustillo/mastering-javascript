@@ -1,10 +1,13 @@
 function listAllValues(obj) {
-    let myArr = [];
+    /* let myArr = [];
 
     for (let prop in obj) {
         myArr.push(obj[prop]);
     }
-    return myArr;
+    return myArr; */
+
+    let propertyValues = Object.values(obj);
+    return propertyValues;
 }
 
 let output = listAllValues({
