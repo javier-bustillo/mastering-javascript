@@ -15,15 +15,15 @@ let customerData = {
 
 function greetCustomer(firstName) {
     let greeting = '';
-    for (let key in customerData) {
-        if (key === firstName) {
-            return 'Hi';
-        } else {
-            return 'Bye';
-        }
-    }
+
+    if (!customerData[firstName]) return greeting = 'Welcome! Is this your first time?';
+    else if (customerData[firstName] && customerData[firstName].visits ===
+        1) return greeting = `Welcome back, ${firstName}! We're glad you liked us the first time!`;
+    else if (customerData[firstName] && customerData[firstName].visits >
+        1) return greeting = `Welcome back, ${firstName}! So glad to see you again!`;
 
     return greeting;
 }
-let output = greetCustomer('Joe');
+
+let output = greetCustomer('Carrie');
 console.log(output);
